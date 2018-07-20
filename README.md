@@ -188,7 +188,7 @@ Utilize profile or access keys with minimal privileges to AWS resources. Followi
 * Addition of new options that could calculate daily, weekly and anual expenditures. Now the script only monthly by default. This could be specified with `-y` or `--year`, `-w` or `--week` and so on.
 
 ## Licence
-MIT
+GPL-v3
 
 ## Author Information
 Stefan Roman (stefan.roman@katapult.cloud)

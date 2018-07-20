@@ -92,7 +92,7 @@ unused:$38
 
 Using the script in verbose mode with different AWS profile.
 ```
-./price_of_ebs.py --verbose eu-west-1 
+./price_of_ebs.py --verbose --profile ebs_user eu-west-1 
 
 
 Total expenditures per EBS type

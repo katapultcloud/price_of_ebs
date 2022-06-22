@@ -107,7 +107,7 @@ def extract_and_calculate_size(ebs_volumes):
 
 # extract unused EBS volumes and add them up based on EBS type
 def determine_unused_ebs(ebs_volumes):
-    final_sizes = {"gp2": 0, "standard": 0, "sc1": 0, "io1": 0, "st1": 0}
+    final_sizes = {"gp2": 0, "gp3": 0, "standard": 0, "sc1": 0, "io1": 0, "st1": 0}
     ebs_list = []
     unused_ebs = []
     # extract type, size, id and attachments from each EBS volume
@@ -164,6 +164,7 @@ def build_price_dict(auth, region):
     ebs_name_map = {
         'standard': 'Magnetic',
         'gp2': 'General Purpose',
+        'gp3': 'General Purpose',
         'io1': 'Provisioned IOPS',
         'st1': 'Throughput Optimized HDD',
         'sc1': 'Cold HDD'

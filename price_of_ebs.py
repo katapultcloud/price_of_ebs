@@ -93,7 +93,7 @@ def get_all_volumes(auth):
 
 # extract and add up EBS sizes based on type of EBS
 def extract_and_calculate_size(ebs_volumes):
-    final_sizes = {"gp2": 0, "standard": 0, "sc1": 0, "io1": 0, "st1": 0}
+    final_sizes = {"gp2": 0, "gp3": 0, "standard": 0, "sc1": 0, "io1": 0, "st1": 0}
     ebs_list = []
     # extract type and size of each particular EBS volumes
     for volume in ebs_volumes:
